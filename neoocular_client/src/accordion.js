@@ -3,16 +3,21 @@ document.querySelectorAll('.toggle-btn').forEach(btn => {
         const content = btn.nextElementSibling;
         const icon = btn.querySelector('.icon');
 
-        // Close all open accordions
-        document.querySelectorAll('.toggle-btn').forEach(otherBtn => {
-            if (otherBtn !== btn) {
-                otherBtn.nextElementSibling.classList.add('hidden');
-                otherBtn.querySelector('.icon').textContent = '+';
+        // Close all others
+        document.querySelectorAll('.accordion-content').forEach(other => {
+            if (other !== content) {
+                other.style.maxHeight = null;
+                other.previousElementSibling.querySelector('.icon').textContent = '+';
             }
         });
 
-        // Toggle current one
-        content.classList.toggle('hidden');
-        icon.textContent = content.classList.contains('hidden') ? '+' : '−';
+        // Toggle selected
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+            icon.textContent = '+';
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.textContent = '−';
+        }
     });
 });
