@@ -109,34 +109,110 @@
         </div>
     </header>
     <main>
-        <section>
-            <div id="filters">
-                <div>
-                    <h1>Product categories</h1>
+        <section class="mx-auto px-10 my-20 flex flex-col justify-between sm:flex-row gap-10">
+            <div id="filters" class="flex flex-col gap-7">
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-[25px] font-medium">Product categories</h1>
+                    <ul class="text-[#595959] font-light text-[20px]">
+                        <li>Cat-Eye</li>
+                        <li>Classic Style</li>
+                        <li>Eyeglasses trend</li>
+                        <li>Lens</li>
+                        <li>New</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-[25px] font-medium">Filter by Gender</h1>
+                    <ul class="text-[#595959] font-light text-[20px]">
+                        <li>Male (56)</li>
+                        <li>Female (48)</li>
+                        <li>Unisex (21)</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-[25px] font-medium">Filter by Color</h1>
+                    <ul class="text-[#595959] font-light text-[20px]">
+                        <li>Yellow</li>
+                        <li>Red</li>
+                        <li>Green</li>
+                        <li>Blue</li>
+                        <li>Black</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-[25px] font-medium">Filter by Size</h1>
+                    <ul class="text-[#595959] font-light text-[20px]">
+                        <li>XL</li>
+                        <li>L</li>
+                        <li>M</li>
+                        <li>S</li>
+                        <li>XS</li>
+                    </ul>
+                </div>
+                <div class=" w-82">
+                    <div class="border border-[#a1a1a1]">
+                        <input type="text" placeholder="Type question" class="outline-none w-50 p-3">
+                        <button
+                            class="bg-[#292929] uppercase text-[12px] font-medium text-white p-4 w-30 hover:cursor-pointer">Send
+                            Now</button>
+                    </div>
                 </div>
                 <div>
-                    <h1>Filter by Gender</h1>
-                </div>
-                <div>
-                    <h1>Filter by Color</h1>
-                </div>
-                <div>
-                    <h1>Filter by Size</h1>
+                    <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/08/shop-banner.jpg"
+                        class="w-[320px] h-[215px] object-cover" alt="">
                 </div>
             </div>
-            <div id="product_line">
-                <div>
+            <div id="product_line" class="flex flex-col gap-10">
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-5">
                     <p>Showing 1–12 of 55 results</p>
-                    <select name="sorting" id="sorting">
+                    <select name="sorting" id="sorting"
+                        class="w-70 p-5 font-light text-[#565656] outline-none border border-[#a1a1a1]">
                         <option value="default" selected>Default sorting</option>
-                        <option value="populars" selected>Sort by popularity</option>
-                        <option value="average" selected>Sort by average rating</option>
-                        <option value="latest" selected>Sort by latest</option>
-                        <option value="low_high" selected>Sort by price: low to high</option>
-                        <option value="high_low" selected>Sort by price: high to low</option>
+                        <option value="populars">Sort by popularity</option>
+                        <option value="average">Sort by average rating</option>
+                        <option value="latest">Sort by latest</option>
+                        <option value="low_high">Sort by price: low to high</option>
+                        <option value="high_low">Sort by price: high to low</option>
                     </select>
                 </div>
-                <div></div>
+                <div class="flex flex-col sm:flex-row gap-4 items-center justify-start flex-wrap">
+                    <div id="product" class="bg-[#fafafa] flex flex-col gap-4 justify-center items-center py-6">
+                        <div id="prod-img">
+                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Shop-Single-01-img-01.jpg"
+                                alt="" class="w-[400px] h-[300px] object-cover">
+                        </div>
+                        <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+                        <h3 class="font-light">Classic style / Round</h3>
+                        <p class="text-[17px]">$199.99</p>
+                    </div>
+                    <div id="product" class="bg-[#fafafa] flex flex-col gap-4 justify-center items-center py-6">
+                        <div id="prod-img">
+                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Shop-Single-01-img-01.jpg"
+                                alt="" class="w-[400px] h-[300px] object-cover">
+                        </div>
+                        <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+                        <h3 class="font-light">Classic style / Round</h3>
+                        <p class="text-[17px]">$199.99</p>
+                    </div>
+                    <div id="product" class="bg-[#fafafa] flex flex-col gap-4 justify-center items-center py-6">
+                        <div id="prod-img">
+                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Shop-Single-01-img-01.jpg"
+                                alt="" class="w-[400px] h-[300px] object-cover">
+                        </div>
+                        <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+                        <h3 class="font-light">Classic style / Round</h3>
+                        <div
+                            class="price transition-all duration-300 ease-in-out transform group-hover:translate-y-6 opacity-100 group-hover:opacity-0">
+                            <p class="text-gray-800 font-bold mt-2 text-[17px]">$49.99</p>
+                        </div>
+                        <div
+                            class="absolute bottom-4 left-0 right-0 flex justify-center gap-3 opacity-0 translate-y-6 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+                            <button class="px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800">Add to
+                                Cart</button>
+                            <button class="px-4 py-2 bg-gray-200 text-sm rounded-lg hover:bg-gray-300">Wishlist</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="sponsor_line" class="bg-[#fafafa] py-6">
