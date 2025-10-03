@@ -162,7 +162,7 @@
                         class="w-[320px] h-[215px] object-cover" alt="">
                 </div>
             </div>
-            <div id="product_line" class="flex flex-col gap-10">
+            <div id="productlist" class="flex flex-col gap-10">
                 <div class="flex flex-col sm:flex-row justify-between items-center gap-5">
                     <p>Showing 1–12 of 55 results</p>
                     <select name="sorting" id="sorting"
@@ -176,41 +176,197 @@
                     </select>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-4 items-center justify-start flex-wrap">
-                    <div id="product" class="bg-[#fafafa] flex flex-col gap-4 justify-center items-center py-6">
+                    <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
                         <div id="prod-img">
-                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Shop-Single-01-img-01.jpg"
-                                alt="" class="w-[400px] h-[300px] object-cover">
+                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg"
+                                alt="" class="w-[400px] h-[216px] object-cover">
                         </div>
                         <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
                         <h3 class="font-light">Classic style / Round</h3>
                         <p class="text-[17px]">$199.99</p>
+                        <div class="flex justify-center items-center gap-6">
+                            <i class="ri-heart-line text-[20px] font-light"></i>
+                            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+                            <div onclick="openModal()">
+                                <i class="ri-eye-line text-[20px] font-light"></i>
+                            </div>
+                            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+                            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+                                <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                                    <button class="absolute top-4 right-4 text-gray-500 hover:text-black"
+                                        onclick="closeModal()">✕</button>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2">
+
+                                        <div class="p-6 flex justify-center items-center">
+                                            <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                                                alt="Product" class="rounded-lg">
+                                        </div>
+
+                                        <div class="p-6 space-y-4">
+                                            <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                                            <p class="text-sm text-gray-500">By Wpbingo</p>
+                                            <p class="text-gray-400 line-through">$100.00</p>
+                                            <p class="text-xl font-bold text-red-600">$60.00</p>
+                                            <p class="text-gray-600 text-sm">
+                                                Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac
+                                                pellentesque lacus.
+                                            </p>
+
+                                            <div>
+                                                <p class="text-sm mb-2">Color:</p>
+                                                <div class="flex gap-2">
+                                                    <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                                                    <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                                                </div>
+                                            </div>
+
+                                            <p class="text-green-600 text-sm">✔ In stock</p>
+
+                                            <div class="flex gap-2 items-center">
+                                                <input type="number" value="1"
+                                                    class="w-16 border rounded-lg text-center p-2">
+                                                <button
+                                                    class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div id="product" class="bg-[#fafafa] flex flex-col gap-4 justify-center items-center py-6">
+                    <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
                         <div id="prod-img">
-                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Shop-Single-01-img-01.jpg"
-                                alt="" class="w-[400px] h-[300px] object-cover">
+                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg"
+                                alt="" class="w-[400px] h-[216px] object-cover">
                         </div>
                         <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
                         <h3 class="font-light">Classic style / Round</h3>
                         <p class="text-[17px]">$199.99</p>
+                        <div class="flex justify-center items-center gap-6">
+                            <i class="ri-heart-line text-[20px] font-light"></i>
+                            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+                            <div onclick="openModal()">
+                                <i class="ri-eye-line text-[20px] font-light"></i>
+                            </div>
+                            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+                            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+                                <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                                    <button class="absolute top-4 right-4 text-gray-500 hover:text-black"
+                                        onclick="closeModal()">✕</button>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2">
+
+                                        <div class="p-6 flex justify-center items-center">
+                                            <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                                                alt="Product" class="rounded-lg">
+                                        </div>
+
+                                        <div class="p-6 space-y-4">
+                                            <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                                            <p class="text-sm text-gray-500">By Wpbingo</p>
+                                            <p class="text-gray-400 line-through">$100.00</p>
+                                            <p class="text-xl font-bold text-red-600">$60.00</p>
+                                            <p class="text-gray-600 text-sm">
+                                                Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac
+                                                pellentesque lacus.
+                                            </p>
+
+                                            <div>
+                                                <p class="text-sm mb-2">Color:</p>
+                                                <div class="flex gap-2">
+                                                    <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                                                    <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                                                </div>
+                                            </div>
+
+                                            <p class="text-green-600 text-sm">✔ In stock</p>
+
+                                            <div class="flex gap-2 items-center">
+                                                <input type="number" value="1"
+                                                    class="w-16 border rounded-lg text-center p-2">
+                                                <button
+                                                    class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                    <div id="product" class="bg-[#fafafa] flex flex-col gap-4 justify-center items-center py-6">
+                    <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
                         <div id="prod-img">
-                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Shop-Single-01-img-01.jpg"
-                                alt="" class="w-[400px] h-[300px] object-cover">
+                            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg"
+                                alt="" class="w-[400px] h-[216px] object-cover">
                         </div>
                         <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
                         <h3 class="font-light">Classic style / Round</h3>
-                        <div
-                            class="price transition-all duration-300 ease-in-out transform group-hover:translate-y-6 opacity-100 group-hover:opacity-0">
-                            <p class="text-gray-800 font-bold mt-2 text-[17px]">$49.99</p>
+                        <p class="text-[17px]">$199.99</p>
+                        <div class="flex justify-center items-center gap-6">
+                            <i class="ri-heart-line text-[20px] font-light"></i>
+                            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+                            <div onclick="openModal()">
+                                <i class="ri-eye-line text-[20px] font-light"></i>
+                            </div>
+                            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+                            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+                                <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                                    <button class="absolute top-4 right-4 text-gray-500 hover:text-black"
+                                        onclick="closeModal()">✕</button>
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2">
+
+                                        <div class="p-6 flex justify-center items-center">
+                                            <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                                                alt="Product" class="rounded-lg">
+                                        </div>
+
+                                        <div class="p-6 space-y-4">
+                                            <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                                            <p class="text-sm text-gray-500">By Wpbingo</p>
+                                            <p class="text-gray-400 line-through">$100.00</p>
+                                            <p class="text-xl font-bold text-red-600">$60.00</p>
+                                            <p class="text-gray-600 text-sm">
+                                                Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac
+                                                pellentesque lacus.
+                                            </p>
+
+                                            <div>
+                                                <p class="text-sm mb-2">Color:</p>
+                                                <div class="flex gap-2">
+                                                    <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                                                    <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                                                </div>
+                                            </div>
+
+                                            <p class="text-green-600 text-sm">✔ In stock</p>
+
+                                            <div class="flex gap-2 items-center">
+                                                <input type="number" value="1"
+                                                    class="w-16 border rounded-lg text-center p-2">
+                                                <button
+                                                    class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                                                    Add to Cart
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div
-                            class="absolute bottom-4 left-0 right-0 flex justify-center gap-3 opacity-0 translate-y-6 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
-                            <button class="px-4 py-2 bg-black text-white text-sm rounded-lg hover:bg-gray-800">Add to
-                                Cart</button>
-                            <button class="px-4 py-2 bg-gray-200 text-sm rounded-lg hover:bg-gray-300">Wishlist</button>
-                        </div>
+
                     </div>
                 </div>
             </div>
