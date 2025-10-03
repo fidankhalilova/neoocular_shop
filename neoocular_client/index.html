@@ -5,14 +5,996 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../node_modules/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="./public/logo.png" type="image/x-icon">
   <link href="/src/style.css" rel="stylesheet">
-  <title>Neo Ocular</title>
+  <title>Home - Neo Ocular</title>
 </head>
 
-<body>
-  <h1 class="text-blue-50 p-3 text-2xl bg-amber-600"><a href="./pricing_plans.html">Pricing Plan Page</a></h1>
-  <h1 class="text-blue-50 p-3 text-2xl bg-amber-600"><a href="./our_staff.html">Our Staff Page</a></h1>
-  <h1 class="text-blue-50 p-3 text-2xl bg-amber-600"><a href="./meet_the_doctor.html">Meet the Doctor Page</a></h1>
+<body class="font-worksans">
+  <header>
+    <div id="nav" class="flex flex-row justify-between items-center mx-auto px-8 py-6">
+      <div id="logo" class="flex justify-start items-center w-150">
+        <div class="w-30">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            stroke="none" viewBox="0 0 118 48" enable-background="new 0 0 118 48" xml:space="preserve">
+            <g>
+              <g>
+                <path d="M29.736,43.063c0.3-0.513,0.707-0.923,1.22-1.229s1.072-0.459,1.678-0.459c0.6,0,1.157,0.153,1.67,0.459
+			c0.513,0.306,0.922,0.717,1.229,1.233c0.306,0.516,0.459,1.07,0.459,1.665c0,0.605-0.152,1.164-0.455,1.674
+			c-0.303,0.51-0.713,0.915-1.229,1.215c-0.516,0.3-1.074,0.45-1.674,0.45c-0.606,0-1.165-0.148-1.678-0.445
+			c-0.513-0.298-0.919-0.701-1.22-1.211c-0.3-0.51-0.45-1.071-0.45-1.683C29.286,44.133,29.436,43.576,29.736,43.063z
+			 M30.672,45.903c0.204,0.354,0.481,0.636,0.833,0.846s0.737,0.315,1.157,0.315c0.414,0,0.792-0.104,1.134-0.311
+			c0.342-0.207,0.613-0.489,0.814-0.847c0.201-0.356,0.302-0.748,0.302-1.174c0-0.427-0.102-0.819-0.306-1.18
+			c-0.204-0.359-0.48-0.645-0.828-0.854c-0.348-0.21-0.729-0.315-1.143-0.315c-0.42,0-0.802,0.105-1.147,0.315
+			c-0.345,0.21-0.618,0.495-0.819,0.854c-0.201,0.36-0.301,0.753-0.301,1.18C30.366,45.159,30.468,45.549,30.672,45.903z">
+                </path>
+                <path d="M45.59,47.883c-0.34,0.126-0.71,0.189-1.112,0.189c-0.678,0-1.27-0.148-1.777-0.445c-0.507-0.298-0.897-0.696-1.17-1.197
+			s-0.409-1.052-0.409-1.651c0-0.654,0.136-1.239,0.409-1.755c0.273-0.517,0.654-0.92,1.143-1.211
+			c0.49-0.291,1.045-0.437,1.669-0.437c0.384,0,0.739,0.051,1.066,0.153c0.327,0.102,0.617,0.23,0.869,0.387l-0.414,0.981
+			c-0.486-0.343-0.981-0.514-1.485-0.514c-0.384,0-0.742,0.104-1.075,0.311s-0.599,0.489-0.797,0.846
+			c-0.198,0.357-0.297,0.749-0.297,1.175c0,0.45,0.091,0.854,0.274,1.211c0.183,0.356,0.444,0.636,0.783,0.837
+			c0.339,0.201,0.73,0.302,1.175,0.302c0.317,0,0.604-0.049,0.859-0.145c0.255-0.096,0.469-0.219,0.644-0.369l0.44,0.937
+			C46.194,47.625,45.929,47.757,45.59,47.883z"></path>
+                <path d="M53.063,46.344c0.132,0.216,0.312,0.389,0.54,0.518c0.228,0.129,0.477,0.193,0.747,0.193c0.282,0,0.538-0.063,0.77-0.188
+			c0.23-0.126,0.412-0.297,0.544-0.514c0.133-0.216,0.198-0.452,0.198-0.711v-4.193h1.035v4.221c0,0.468-0.112,0.884-0.338,1.246
+			c-0.225,0.363-0.532,0.647-0.922,0.851c-0.391,0.204-0.819,0.307-1.287,0.307s-0.896-0.103-1.282-0.307
+			c-0.388-0.203-0.692-0.487-0.914-0.851c-0.222-0.362-0.333-0.778-0.333-1.246v-4.221h1.044v4.193
+			C52.865,45.894,52.932,46.128,53.063,46.344z"></path>
+                <path d="M63.784,41.448v5.544h3.23V48h-4.283v-6.552H63.784z"></path>
+                <path d="M75.906,46.461h-2.385L72.891,48h-1.035l2.898-6.822h0.063L77.715,48h-1.206L75.906,46.461z M75.555,45.561l-0.819-2.069
+			l-0.846,2.069H75.555z"></path>
+                <path d="M86.553,48l-1.477-2.277h-0.107h-0.945V48h-1.053v-6.552h1.845c0.731,0,1.318,0.186,1.76,0.558
+			c0.44,0.372,0.661,0.889,0.661,1.548c0,0.402-0.086,0.775-0.257,1.121c-0.171,0.345-0.439,0.61-0.806,0.796L87.768,48H86.553z
+			 M84.024,44.715h0.936c0.42,0,0.725-0.115,0.914-0.347c0.188-0.23,0.283-0.49,0.283-0.778c0-0.168-0.036-0.337-0.108-0.509
+			c-0.071-0.171-0.194-0.317-0.368-0.44c-0.175-0.123-0.402-0.185-0.685-0.185h-0.972V44.715z"></path>
+              </g>
+              <g>
+                <path
+                  d="M23.546,1.03v27.213h-0.142L5.108,11.724l0.107,15.454h-5.223V0h0.213l18.261,16.769L18.359,1.03H23.546z">
+                </path>
+                <path d="M93.029,7.496c1.195-2.06,2.818-3.7,4.867-4.92c2.048-1.22,4.268-1.83,6.661-1.83c2.392,0,4.612,0.61,6.661,1.83
+			c2.048,1.22,3.683,2.86,4.903,4.92c1.219,2.061,1.83,4.276,1.83,6.644c0,2.416-0.611,4.643-1.83,6.679
+			c-1.22,2.038-2.855,3.654-4.903,4.85c-2.049,1.196-4.269,1.794-6.661,1.794c-2.416,0-4.642-0.598-6.679-1.794
+			c-2.037-1.196-3.654-2.812-4.849-4.85c-1.196-2.037-1.794-4.263-1.794-6.679C91.235,11.772,91.833,9.557,93.029,7.496z
+			 M97.647,18.332c0.723,1.279,1.705,2.291,2.949,3.037c1.243,0.746,2.623,1.119,4.139,1.119c1.468,0,2.807-0.373,4.015-1.119
+			c1.208-0.746,2.155-1.753,2.842-3.019c0.687-1.267,1.031-2.67,1.031-4.21c0-1.563-0.356-2.984-1.067-4.263
+			c-0.71-1.279-1.675-2.292-2.895-3.038c-1.22-0.746-2.576-1.119-4.068-1.119s-2.849,0.373-4.068,1.119
+			c-1.22,0.746-2.185,1.759-2.896,3.038c-0.711,1.279-1.066,2.7-1.066,4.263C96.564,15.656,96.925,17.053,97.647,18.332z">
+                </path>
+                <polygon
+                  points="58,22 58,17 68,17 68,12 58,12 58,6 71,6 71,1 53,1 53,12 42,12 42,17 53,17 53,27 71,27 71,22 		">
+                </polygon>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div id="navlist" class="flex flex-row justify-center items-center w-full">
+        <ul class="flex flex-row justify-center gap-10 items-center">
+          <li class="text-[16px] uppercase hover:underline duration-200 tracking-wide"><a href="#">Home</a>
+          </li>
+          <li class="text-[16px] uppercase hover:underline duration-200 tracking-wide"><a href="#">Pages</a>
+          </li>
+          <li class="text-[16px] uppercase hover:underline duration-200 tracking-wide"><a href="#">Shop</a>
+          </li>
+          <li class="text-[16px] uppercase hover:underline duration-200 tracking-wide"><a href="#">Blog</a>
+          </li>
+          <li class="text-[16px] uppercase hover:underline duration-200 tracking-wide"><a href="#">Landing</a>
+          </li>
+        </ul>
+      </div>
+      <div id="action_btns" class="flex flex-row justify-end items-center w-150 gap-3">
+        <div id="search_btn">
+          <a href=""><i class="ri-search-line text-lg"></i></a>
+        </div>
+        <div id="fav_btn">
+          <a href=""><i class="ri-heart-line text-lg"></i></a>
+        </div>
+        <div id="user_btn">
+          <a href=""><i class="ri-user-line text-lg"></i></a>
+        </div>
+        <div id="cart_btn">
+          <a href=""><i class="ri-shopping-bag-4-line text-lg"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="banner_slider">
+      <div class="swiper w-full h-[750px]">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="flex justify-between items-center gap-8">
+              <div class="w-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1512099053734-e6767b535838?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="" class="w-full h-[785px] object-cover relative">
+
+                <div class="flex flex-col gap-4 absolute z-10 top-0 justify-center items-center w-full h-full">
+                  <div
+                    class="w-75 h-100 bg-white text-black text-center flex flex-col gap-4 justify-center items-center">
+                    <div class="flex flex-col gap-1">
+                      <h1 class="tracking-wide uppercase text-[90px] font-semibold leading-20">T</h1>
+                      <p class="text-[40px]">Eye</p>
+                      <p class="text-[35px]">Vision</p>
+                      <p class="text-[30px] font-light">Check</p>
+                    </div>
+                    <button class="pb-2 border-b">Book now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1599810455651-70d5815087f9?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="" class="w-full h-[785px] object-cover relative">
+
+                <div class="flex flex-col gap-4 absolute top-0 w-full h-full justify-center items-center">
+                  <h1 class="tracking-wide uppercase text-white text-[55px] font-semibold leading-13">a variety of
+                    styles</h1>
+                  <p class="text-white text-[20px] font-light">Find a product of your perfect match</p>
+                  <button id="btn"
+                    class="px-5 py-4 text-white border w-60 border-white text-[16px] max-w-60 hover:bg-[#292929] duration-200 hover:cursor-pointer">View
+                    more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-between items-center gap-8">
+              <div class="w-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1529158062015-cad636e205a0?q=80&w=1353&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="" class="w-full h-[785px] object-cover relative">
+
+                <div class="flex flex-col gap-4 absolute z-10 top-0 justify-center items-center w-full h-full">
+                  <div
+                    class="w-75 h-100 bg-white text-black text-center flex flex-col gap-4 justify-center items-center">
+                    <div class="flex flex-col gap-1">
+                      <h1 class="tracking-wide uppercase text-[90px] font-semibold leading-20">T</h1>
+                      <p class="text-[40px]">Eye</p>
+                      <p class="text-[35px]">Vision</p>
+                      <p class="text-[30px] font-light">Check</p>
+                    </div>
+                    <button class="pb-2 border-b">Book now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1661983227947-d07ba784346c?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="" class="w-full h-[785px] object-cover relative">
+
+                <div class="flex flex-col gap-4 absolute top-0 w-full h-full justify-center items-center">
+                  <h1 class="tracking-wide uppercase text-white text-[55px] font-semibold leading-13">a variety of
+                    styles</h1>
+                  <p class="text-white text-[20px] font-light">Find a product of your perfect match</p>
+                  <button id="btn"
+                    class="px-5 py-4 text-white border w-60 border-white text-[16px] max-w-60 hover:bg-[#292929] duration-200 hover:cursor-pointer">View
+                    more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-between items-center gap-8">
+              <div class="w-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1595367555510-0428cca40e16?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fGdsYXNzZXN8ZW58MHx8MHx8fDA%3D"
+                  alt="" class="w-full h-[785px] object-cover relative">
+
+                <div class="flex flex-col gap-4 absolute z-10 top-0 justify-center items-center w-full h-full">
+                  <div
+                    class="w-75 h-100 bg-white text-black text-center flex flex-col gap-4 justify-center items-center">
+                    <div class="flex flex-col gap-1">
+                      <h1 class="tracking-wide uppercase text-[90px] font-semibold leading-20">T</h1>
+                      <p class="text-[40px]">Eye</p>
+                      <p class="text-[35px]">Vision</p>
+                      <p class="text-[30px] font-light">Check</p>
+                    </div>
+                    <button class="pb-2 border-b">Book now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full relative">
+                <img
+                  src="https://images.unsplash.com/photo-1544825470-60e99eef8a70?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="" class="w-full h-[785px] object-cover relative">
+
+                <div class="flex flex-col gap-4 absolute top-0 w-full h-full justify-center items-center">
+                  <h1 class="tracking-wide uppercase text-white text-[55px] font-semibold leading-13">a variety of
+                    styles</h1>
+                  <p class="text-white text-[20px] font-light">Find a product of your perfect match</p>
+                  <button id="btn"
+                    class="px-5 py-4 text-white border w-60 border-white text-[16px] max-w-60 hover:bg-[#292929] duration-200 hover:cursor-pointer">View
+                    more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev "></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <section id="browse_products" class="mx-auto px-20 my-40 flex flex-col gap-10">
+      <div class="flex flex-col gap-3">
+        <h1 class="uppercase tracking-wide text-[40px] text-center font-semibold">Browse Our Products</h1>
+        <p class="tracking-wide text-[20px] font-light text-center">Explore our new summer collection</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4 items-center justify-center flex-wrap">
+        <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
+          <div id="prod-img">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg" alt=""
+              class="w-[440px] h-[216px] object-cover">
+          </div>
+          <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+          <h3 class="font-light">Classic style / Round</h3>
+          <p class="text-[17px]">$199.99</p>
+          <div class="flex justify-center items-center gap-6">
+            <i class="ri-heart-line text-[20px] font-light"></i>
+            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+            <div onclick="openModal()">
+              <i class="ri-eye-line text-[20px] font-light"></i>
+            </div>
+            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+              <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-black" onclick="closeModal()">✕</button>
+
+                <div class="grid grid-cols-1 md:grid-cols-2">
+
+                  <div class="p-6 flex justify-center items-center">
+                    <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                      alt="Product" class="rounded-lg">
+                  </div>
+
+                  <div class="p-6 space-y-4">
+                    <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                    <p class="text-sm text-gray-500">By Wpbingo</p>
+                    <p class="text-gray-400 line-through">$100.00</p>
+                    <p class="text-xl font-bold text-red-600">$60.00</p>
+                    <p class="text-gray-600 text-sm">
+                      Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac pellentesque lacus.
+                    </p>
+
+                    <div>
+                      <p class="text-sm mb-2">Color:</p>
+                      <div class="flex gap-2">
+                        <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                        <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                      </div>
+                    </div>
+
+                    <p class="text-green-600 text-sm">✔ In stock</p>
+
+                    <div class="flex gap-2 items-center">
+                      <input type="number" value="1" class="w-16 border rounded-lg text-center p-2">
+                      <button class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
+          <div id="prod-img">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg" alt=""
+              class="w-[440px] h-[216px] object-cover">
+          </div>
+          <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+          <h3 class="font-light">Classic style / Round</h3>
+          <p class="text-[17px]">$199.99</p>
+          <div class="flex justify-center items-center gap-6">
+            <i class="ri-heart-line text-[20px] font-light"></i>
+            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+            <div onclick="openModal()">
+              <i class="ri-eye-line text-[20px] font-light"></i>
+            </div>
+            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+              <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-black" onclick="closeModal()">✕</button>
+
+                <div class="grid grid-cols-1 md:grid-cols-2">
+
+                  <div class="p-6 flex justify-center items-center">
+                    <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                      alt="Product" class="rounded-lg">
+                  </div>
+
+                  <div class="p-6 space-y-4">
+                    <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                    <p class="text-sm text-gray-500">By Wpbingo</p>
+                    <p class="text-gray-400 line-through">$100.00</p>
+                    <p class="text-xl font-bold text-red-600">$60.00</p>
+                    <p class="text-gray-600 text-sm">
+                      Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac pellentesque lacus.
+                    </p>
+
+                    <div>
+                      <p class="text-sm mb-2">Color:</p>
+                      <div class="flex gap-2">
+                        <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                        <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                      </div>
+                    </div>
+
+                    <p class="text-green-600 text-sm">✔ In stock</p>
+
+                    <div class="flex gap-2 items-center">
+                      <input type="number" value="1" class="w-16 border rounded-lg text-center p-2">
+                      <button class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
+          <div id="prod-img">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg" alt=""
+              class="w-[440px] h-[216px] object-cover">
+          </div>
+          <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+          <h3 class="font-light">Classic style / Round</h3>
+          <p class="text-[17px]">$199.99</p>
+          <div class="flex justify-center items-center gap-6">
+            <i class="ri-heart-line text-[20px] font-light"></i>
+            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+            <div onclick="openModal()">
+              <i class="ri-eye-line text-[20px] font-light"></i>
+            </div>
+            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+              <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-black" onclick="closeModal()">✕</button>
+
+                <div class="grid grid-cols-1 md:grid-cols-2">
+
+                  <div class="p-6 flex justify-center items-center">
+                    <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                      alt="Product" class="rounded-lg">
+                  </div>
+
+                  <div class="p-6 space-y-4">
+                    <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                    <p class="text-sm text-gray-500">By Wpbingo</p>
+                    <p class="text-gray-400 line-through">$100.00</p>
+                    <p class="text-xl font-bold text-red-600">$60.00</p>
+                    <p class="text-gray-600 text-sm">
+                      Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac pellentesque lacus.
+                    </p>
+
+                    <div>
+                      <p class="text-sm mb-2">Color:</p>
+                      <div class="flex gap-2">
+                        <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                        <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                      </div>
+                    </div>
+
+                    <p class="text-green-600 text-sm">✔ In stock</p>
+
+                    <div class="flex gap-2 items-center">
+                      <input type="number" value="1" class="w-16 border rounded-lg text-center p-2">
+                      <button class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
+          <div id="prod-img">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg" alt=""
+              class="w-[440px] h-[216px] object-cover">
+          </div>
+          <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+          <h3 class="font-light">Classic style / Round</h3>
+          <p class="text-[17px]">$199.99</p>
+          <div class="flex justify-center items-center gap-6">
+            <i class="ri-heart-line text-[20px] font-light"></i>
+            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+            <div onclick="openModal()">
+              <i class="ri-eye-line text-[20px] font-light"></i>
+            </div>
+            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+              <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-black" onclick="closeModal()">✕</button>
+
+                <div class="grid grid-cols-1 md:grid-cols-2">
+
+                  <div class="p-6 flex justify-center items-center">
+                    <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                      alt="Product" class="rounded-lg">
+                  </div>
+
+                  <div class="p-6 space-y-4">
+                    <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                    <p class="text-sm text-gray-500">By Wpbingo</p>
+                    <p class="text-gray-400 line-through">$100.00</p>
+                    <p class="text-xl font-bold text-red-600">$60.00</p>
+                    <p class="text-gray-600 text-sm">
+                      Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac pellentesque lacus.
+                    </p>
+
+                    <div>
+                      <p class="text-sm mb-2">Color:</p>
+                      <div class="flex gap-2">
+                        <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                        <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                      </div>
+                    </div>
+
+                    <p class="text-green-600 text-sm">✔ In stock</p>
+
+                    <div class="flex gap-2 items-center">
+                      <input type="number" value="1" class="w-16 border rounded-lg text-center p-2">
+                      <button class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
+          <div id="prod-img">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg" alt=""
+              class="w-[440px] h-[216px] object-cover">
+          </div>
+          <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+          <h3 class="font-light">Classic style / Round</h3>
+          <p class="text-[17px]">$199.99</p>
+          <div class="flex justify-center items-center gap-6">
+            <i class="ri-heart-line text-[20px] font-light"></i>
+            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+            <div onclick="openModal()">
+              <i class="ri-eye-line text-[20px] font-light"></i>
+            </div>
+            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+              <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-black" onclick="closeModal()">✕</button>
+
+                <div class="grid grid-cols-1 md:grid-cols-2">
+
+                  <div class="p-6 flex justify-center items-center">
+                    <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                      alt="Product" class="rounded-lg">
+                  </div>
+
+                  <div class="p-6 space-y-4">
+                    <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                    <p class="text-sm text-gray-500">By Wpbingo</p>
+                    <p class="text-gray-400 line-through">$100.00</p>
+                    <p class="text-xl font-bold text-red-600">$60.00</p>
+                    <p class="text-gray-600 text-sm">
+                      Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac pellentesque lacus.
+                    </p>
+
+                    <div>
+                      <p class="text-sm mb-2">Color:</p>
+                      <div class="flex gap-2">
+                        <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                        <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                      </div>
+                    </div>
+
+                    <p class="text-green-600 text-sm">✔ In stock</p>
+
+                    <div class="flex gap-2 items-center">
+                      <input type="number" value="1" class="w-16 border rounded-lg text-center p-2">
+                      <button class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div id="product" class=" flex flex-col gap-4 justify-center items-center py-6">
+          <div id="prod-img">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/PRODUCT-01-c-1.jpg" alt=""
+              class="w-[440px] h-[216px] object-cover">
+          </div>
+          <h1 class="uppercase tracking-wide font-semibold">Gold Glasses</h1>
+          <h3 class="font-light">Classic style / Round</h3>
+          <p class="text-[17px]">$199.99</p>
+          <div class="flex justify-center items-center gap-6">
+            <i class="ri-heart-line text-[20px] font-light"></i>
+            <i class="ri-shopping-cart-line text-[20px] font-light"></i>
+            <div onclick="openModal()">
+              <i class="ri-eye-line text-[20px] font-light"></i>
+            </div>
+            <div id="overlay" class="fixed inset-0 bg-black/50 hidden z-40"></div>
+
+            <div id="modal" class="fixed inset-0 flex items-center justify-center hidden z-50">
+              <div class="bg-white w-[90%] max-w-4xl rounded-lg shadow-lg relative">
+
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-black" onclick="closeModal()">✕</button>
+
+                <div class="grid grid-cols-1 md:grid-cols-2">
+
+                  <div class="p-6 flex justify-center items-center">
+                    <img src="https://wpbingo-adena.myshopify.com/cdn/shop/files/pro.jpg?v=1714967262&width=600"
+                      alt="Product" class="rounded-lg">
+                  </div>
+
+                  <div class="p-6 space-y-4">
+                    <h2 class="text-2xl font-semibold">Apollo Coin Necklace</h2>
+                    <p class="text-sm text-gray-500">By Wpbingo</p>
+                    <p class="text-gray-400 line-through">$100.00</p>
+                    <p class="text-xl font-bold text-red-600">$60.00</p>
+                    <p class="text-gray-600 text-sm">
+                      Curabitur egestas malesuada volutpat. Nunc vel vestibulum odio, ac pellentesque lacus.
+                    </p>
+
+                    <div>
+                      <p class="text-sm mb-2">Color:</p>
+                      <div class="flex gap-2">
+                        <button class="w-8 h-8 border rounded-full bg-gray-400"></button>
+                        <button class="w-8 h-8 border rounded-full bg-yellow-400"></button>
+                      </div>
+                    </div>
+
+                    <p class="text-green-600 text-sm">✔ In stock</p>
+
+                    <div class="flex gap-2 items-center">
+                      <input type="number" value="1" class="w-16 border rounded-lg text-center p-2">
+                      <button class="flex-1 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-900">
+                        Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="new_product" class="flex gap-0">
+      <div class="w-1/2 h-[750px] relative">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/10/Main-Home-stacked-img-big-001.jpg"
+          alt="" class="relative w-full h-full object-cover">
+
+        <div class="absolute bottom-0 right-[-50px] z-10">
+          <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/10/Main-home-stacked-img-0001-1.png"
+            alt="">
+        </div>
+      </div>
+      <div class="w-1/2 bg-[#fafafa]">
+        <div class="h-full w-full flex flex-col justify-center items-center gap-6">
+          <h1 class="text-[35px] font-semibold uppercase tracking-wide">Blue light optical lens</h1>
+          <p class="text-[20px] mr-15">Lorem ipsum dolore amet, vivid vel risus sit</p>
+          <div class="flex flex-col gap-7">
+            <div class="flex gap-3 pb-5 border-b border-[#5e5e5e]">
+              <div><i class="ri-sun-line text-[25px]"></i></div>
+              <div class="text-[18px]">
+                <h3 class="font-semibold tracking-wide uppercase">Cras sodales odio non libero tincidunt amet</h3>
+                <h4 class="font-light text-[#5e5e5e] text-[17px]">Lorem ipsum dolor sit amet, consectetur sit do</h4>
+              </div>
+            </div>
+            <div class="flex gap-3">
+              <div><i class="ri-leaf-fill text-[25px]"></i></div>
+              <div class="text-[18px]">
+                <h3 class="font-semibold tracking-wide uppercase">Cras sodales odio non libero tincidunt amet</h3>
+                <h4 class="font-light text-[#5e5e5e] text-[17px]">Lorem ipsum dolor sit amet, consectetur sit do</h4>
+              </div>
+            </div>
+          </div>
+          <button id="btn"
+            class="mr-80 px-5 py-4 text-black border border-black text-[16px] w-40 hover:bg-[#292929] hover:text-white duration-200 hover:cursor-pointer">View
+            More</button>
+        </div>
+      </div>
+    </section>
+    <section id="online_service" class="mx-auto px-20 my-40 flex flex-col gap-10">
+      <div class="flex flex-col gap-3 justify-center items-center">
+        <h1 class="uppercase tracking-wide text-[40px] font-semibold">Online shop services</h1>
+        <p class="tracking-wide text-[20px] font-light">Our entire offer is only just one click away</p>
+      </div>
+      <div class="flex justify-center items-center gap-25">
+        <div class="flex flex-col justify-center items-center gap-3">
+          <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/10/mainhome-icon-01.png" alt=""
+            class="w-[129px] h-[69px]">
+          <h2 class="font-semibold text-[20px] uppercase tracking-wide">Free delivery</h2>
+          <h3 class="text-center">Nec mauris sollicitudin, pharetra ex non, consectetur mauris vitae orci sit</h3>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-3">
+          <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/10/main-home-icon-02.png" alt=""
+            class="w-[71px] h-[71px]">
+          <h2 class="font-semibold text-[20px] uppercase tracking-wide">100% safe online shoping</h2>
+          <h3 class="text-center">Nec mauris sollicitudin, pharetra ex non, consectetur mauris vitae orci sit</h3>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-3">
+          <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/10/sluske.png" alt=""
+            class="w-[90px] h-[78px]">
+          <h2 class="font-semibold text-[20px] uppercase tracking-wide">Helpdesk center</h2>
+          <h3 class="text-center">Nec mauris sollicitudin, pharetra ex non, consectetur mauris vitae orci sit</h3>
+        </div>
+      </div>
+    </section>
+    <section id="about_shop" class="flex justify-between items-center gap-8">
+      <div class="w-full relative">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/08/main-home-banner-01.jpg" alt=""
+          class="w-full h-[785px] object-cover relative">
+
+        <div class="flex flex-col gap-4 absolute bottom-15 left-15">
+          <h1 class="tracking-wide uppercase text-white text-[35px] font-semibold">quality standards</h1>
+          <p class="text-white text-[20px]">View all our frames and diiscover your perfect match</p>
+          <button id="btn"
+            class="px-5 py-4 text-white border border-white text-[16px] max-w-60 hover:bg-[#292929] duration-200 hover:cursor-pointer">Book
+            Appointment</button>
+        </div>
+      </div>
+      <div class="w-full relative">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/08/main-home-banner-02.jpg" alt=""
+          class="w-full h-[785px] object-cover relative">
+
+        <div class="flex flex-col gap-4 absolute bottom-15 left-15">
+          <h1 class="tracking-wide uppercase text-white text-[35px] font-semibold">quality standards</h1>
+          <p class="text-white text-[20px]">View all our frames and diiscover your perfect match</p>
+          <button id="btn"
+            class="px-5 py-4 text-white border border-white text-[16px] max-w-60 hover:bg-[#292929] duration-200 hover:cursor-pointer">Book
+            Appointment</button>
+        </div>
+      </div>
+    </section>
+    <section id="booking_plans" class="mx-auto px-16 py-30 flex flex-col gap-10">
+      <div class="flex flex-col gap-3">
+        <h1 class="uppercase tracking-wide text-[40px] font-semibold">Book a meeting now</h1>
+        <p class="tracking-wide text-[20px] font-light">Book your term online fast and easy</p>
+      </div>
+      <div id="plans" class="flex flex-col justify-between items-start sm:flex-row">
+        <div id="one-plan" class="flex flex-col gap-5">
+          <div id="plan-img" class="max-w-[450px]">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Pricing-plans-SINGLE-IMG-01.jpg"
+              alt="" class="w-full h-full object-cover">
+          </div>
+          <h2 class="font-semibold text-[30px]">Comprehensive eye exams</h2>
+          <ul class="text-[#565656] flex flex-col gap-1 text-[20px]">
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+          </ul>
+          <button id="btn"
+            class="px-5 py-4 border text-[16px] max-w-60 hover:bg-[#292929] hover:text-white duration-200 hover:cursor-pointer">Book
+            Appointment</button>
+        </div>
+        <div id="one-plan" class="flex flex-col gap-5">
+          <div id="plan-img" class="max-w-[450px]">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Pricing-plans-SINGLE-IMG-01.jpg"
+              alt="" class="w-full h-full object-cover">
+          </div>
+          <h2 class="font-semibold text-[30px]">Comprehensive eye exams</h2>
+          <ul class="text-[#565656] flex flex-col gap-1 text-[20px]">
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+          </ul>
+          <button id="btn"
+            class="px-5 py-4 border text-[16px] max-w-60 hover:bg-[#292929] hover:text-white duration-200 hover:cursor-pointer">Book
+            Appointment</button>
+        </div>
+        <div id="one-plan" class="flex flex-col gap-5">
+          <div id="plan-img" class="max-w-[450px]">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Pricing-plans-SINGLE-IMG-01.jpg"
+              alt="" class="w-full h-full object-cover">
+          </div>
+          <h2 class="font-semibold text-[30px]">Comprehensive eye exams</h2>
+          <ul class="text-[#565656] flex flex-col gap-1 text-[20px]">
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+            <li>
+              <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolore sit malesu
+            </li>
+          </ul>
+          <button id="btn"
+            class="px-5 py-4 border text-[16px] max-w-60 hover:bg-[#292929] hover:text-white duration-200 hover:cursor-pointer">Book
+            Appointment</button>
+        </div>
+      </div>
+    </section>
+    <section id="appointment" class="flex my-20">
+      <div class="w-full h-[906px] overflow-hidden relative">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/10/h1-paralax-img-00001.jpg" alt=""
+          class="relative">
+
+        <div class="absolute top-0 left-0 h-full w-full flex justify-center items-center">
+          <div class="bg-white text-black w-200 h-90 flex flex-col justify-center items-center gap-8">
+            <h1 class="text-center uppercase tracking-wide text-[40px] font-semibold">Book appointment</h1>
+            <p>Get professional assistance the simplest way</p>
+            <div class="w-132">
+              <div class="border border-[#a1a1a1]">
+                <input type="text" placeholder="Type question" class="outline-none w-90 p-3">
+                <button
+                  class="bg-[#292929] uppercase text-[12px] font-medium text-white p-4 w-40 hover:cursor-pointer">Send
+                  Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="seasonal_shop" class="flex gap-0">
+      <div class="w-1/2 bg-[#fafafa]">
+        <div class="h-full w-full flex flex-col justify-center items-center gap-6">
+          <h1 class="text-[35px] font-semibold uppercase tracking-wide">Autumn / winter shop 2021</h1>
+          <p class="text-[20px] mr-15">Lorem ipsum dolore amet, vivid vel risus</p>
+          <div class="flex flex-col gap-7">
+            <div class="w-100">
+              <div class="border-b border-b-[#b2b2b2] py-2">
+                <button
+                  class="w-full flex justify-between items-center py-4 text-left font-semibold text-lg focus:outline-none toggle-btn">
+                  <span>Explore new collection of glasses in our online shop</span>
+                  <span class="icon">+</span>
+                </button>
+                <div
+                  class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out text-gray-600">
+                  <p class="pb-4">
+                    You can find frame measurements inside the temples or check our size guide for details.
+                  </p>
+                </div>
+              </div>
+              <div class="border-b border-b-[#b2b2b2] py-2">
+                <button
+                  class="w-full flex justify-between items-center py-4 text-left font-semibold text-lg focus:outline-none toggle-btn">
+                  <span>Unique items with ergonomic design style</span>
+                  <span class="icon">+</span>
+                </button>
+                <div
+                  class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out text-gray-600">
+                  <p class="pb-4">
+                    You can find frame measurements inside the temples or check our size guide for details.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-1/2 h-[750px] relative">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/10/main-home-img-stacked-02.jpg" alt=""
+          class="relative w-full h-full object-cover">
+
+        <div class="absolute bottom-0 left-[-50px] z-10">
+          <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/10/Main-home-stacked-img-0002.png"
+            alt="">
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="py-30 px-16 mx-auto flex flex-col gap-8">
+      <div>
+        <h1 class="text-center uppercase tracking-wide text-[40px] font-semibold">Latest neo ocular updates</h1>
+        <p class="text-center tracking-wide text-[20px] font-light">Placerat orci nulla pellentesque sed in donne</p>
+      </div>
+      <div class="flex justify-between items-center">
+        <div id="blog-post" class="flex flex-col justify-center items-center gap-4">
+          <div class="overflow-hidden">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/h1-b-list-img-1.jpg"
+              class="w-[451px] hover:scale-[1.05] duration-300">
+          </div>
+          <p class="text-[14px] text-[#595959] tracking-wide">Jul 30, Style / Vision</p>
+          <h1 class="text-[20px] font-semibold uppercase tracking-wide">Trendy men’s eyeglasses</h1>
+          <p class="box-border flex flex-wrap text-center text-[#3f3f3f]">Convallis convallis tellus id interdum velit
+            laoreet id.
+            Aenean pharetra
+            magna ac
+            placerat</p>
+          <button class="pb-2 border-b">READ MORE</button>
+        </div>
+        <div id="blog-post" class="flex flex-col justify-center items-center gap-4">
+          <div class="overflow-hidden">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/h1-b-list-img-1.jpg"
+              class="w-[451px] hover:scale-[1.05] duration-300">
+          </div>
+          <p class="text-[14px] text-[#595959] tracking-wide">Jul 30, Style / Vision</p>
+          <h1 class="text-[20px] font-semibold uppercase tracking-wide">Trendy men’s eyeglasses</h1>
+          <p class="box-border flex flex-wrap text-center text-[#3f3f3f]">Convallis convallis tellus id interdum velit
+            laoreet id.
+            Aenean pharetra
+            magna ac
+            placerat</p>
+          <button class="pb-2 border-b">READ MORE</button>
+        </div>
+        <div id="blog-post" class="flex flex-col justify-center items-center gap-4">
+          <div class="overflow-hidden">
+            <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/h1-b-list-img-1.jpg"
+              class="w-[451px] hover:scale-[1.05] duration-300">
+          </div>
+          <p class="text-[14px] text-[#595959] tracking-wide">Jul 30, Style / Vision</p>
+          <h1 class="text-[20px] font-semibold uppercase tracking-wide">Trendy men’s eyeglasses</h1>
+          <p class="box-border flex flex-wrap text-center text-[#3f3f3f]">Convallis convallis tellus id interdum velit
+            laoreet id.
+            Aenean pharetra
+            magna ac
+            placerat</p>
+          <button class="pb-2 border-b">READ MORE</button>
+        </div>
+      </div>
+
+    </section>
+    <section id="insta" class="bg-[#121212] py-30 px-16 mx-auto flex flex-col gap-8">
+      <div>
+        <h1 class="text-white text-center uppercase tracking-wide text-[40px] font-semibold">Visit our Instagram</h1>
+        <p class="text-white text-center tracking-wide text-[20px] font-light">Check our latest posts now</p>
+      </div>
+      <div class="flex justify-between items-center">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2023/11/gallery-img-01.jpg" alt=""
+          class="w-[256px]">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2023/11/gallery-img-01.jpg" alt=""
+          class="w-[256px]">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2023/11/gallery-img-01.jpg" alt=""
+          class="w-[256px]">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2023/11/gallery-img-01.jpg" alt=""
+          class="w-[256px]">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2023/11/gallery-img-01.jpg" alt=""
+          class="w-[256px]">
+      </div>
+
+    </section>
+    <section id="sponsor_line" class="bg-[#fafafa] py-6">
+      <div class="flex flex-row justify-between items-center mx-auto px-7 py-6">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Client-01-hover.png" alt=""
+          class="w-40">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Client-02-hover-1.png" alt=""
+          class="w-40">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Client-03-hover-1.png" alt=""
+          class="w-40">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Client-04-hover-1.png" alt=""
+          class="w-40">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/07/Client-05-hover-1.png" alt=""
+          class="w-40">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="flex flex-row justify-between items-start mt-20 mb-10 mx-auto px-10">
+      <div id="foot_logo">
+        <img src="https://neoocular.qodeinteractive.com/wp-content/uploads/2021/08/logo-footer-img.jpg" alt="">
+      </div>
+      <div id="links_list" class="flex flex-col justify-start">
+        <h4 class="font-semibold text-xl">Services</h4>
+        <ul class="flex flex-col gap-1">
+          <li><a href="">Book eye test</a></li>
+          <li><a href="">Vision therapy</a></li>
+          <li><a href="">Vouchers</a></li>
+          <li><a href="">Lenses & prices</a></li>
+          <li><a href="">Eye health</a></li>
+        </ul>
+      </div>
+      <div id="links_list" class="flex flex-col justify-start">
+        <h4 class="font-semibold text-xl">The Company</h4>
+        <ul class="flex flex-col gap-1">
+          <li><a href="">Contact</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Shipping</a></li>
+          <li><a href="">Stores</a></li>
+          <li><a href="">Collection</a></li>
+          <li><a href="">Jobs and carrers</a></li>
+        </ul>
+      </div>
+      <div id="links_list" class="flex flex-col justify-start">
+        <h4 class="font-semibold text-xl">General</h4>
+        <ul class="flex flex-col gap-1">
+          <li><a href="">Our doctors</a></li>
+          <li><a href="">About companyy</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Products on sale</a></li>
+          <li><a href="">Our news</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex flex-row justify-between items-center mx-auto px-14 py-2 border-t">
+      <div class="flex flex-row items-center gap-3">
+        <i class="ri-instagram-line text-lg"></i>
+        <i class="ri-facebook-fill text-lg"></i>
+        <i class="ri-pinterest-fill text-lg"></i>
+        <i class="ri-twitter-x-fill text-lg"></i>
+      </div>
+      <div>
+        <p>@ 2021 Qode Interactive, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.mjs'
+
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      speed: 800,
+      injectStyles: [
+        `
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: white;
+      border-radius: 50%;
+      padding: 10px;
+    }
+    `,
+      ],
+
+      // If we need pagination
+      // pagination: {
+      //   el: '.swiper-pagination',
+      // },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+  <script src="./src/main.js"></script>
+  <script src="./src/accordion.js"></script>
+  <script src="./src/popup.js"></script>
 </body>
 
 </html>
